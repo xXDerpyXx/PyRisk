@@ -4,8 +4,8 @@ def load_names():
 		names = namepool_file.read().split("\n")
 
 	while "" in names:  # In case of newline at end of file
-    	names.remove("")
-    	
+		names.remove("")
+
 	return names
 
 temp = load_names()
