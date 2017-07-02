@@ -1,5 +1,5 @@
-Kangaroo Country [has_water: 1]
-'Murica
+Kangaroo Country[space:7,population:3,max_neighbours:2,min_neighbours:1]
+'Murica[space:6,population:4,max_neighbours:4,min_neighbours:2]
 The Back Yard
 Germany
 Italy
