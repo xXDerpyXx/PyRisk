@@ -1,5 +1,5 @@
-Kangaroo Country
-'Murica
+Kangaroo Country[space:7,population:3,maxNeighbors:2,minNeighbors:1]
+'Murica[space:6,population:4,maxNeighbors:4,minNeighbors:2]
 The Back Yard
 Germany
 Italy
