@@ -1,4 +1,4 @@
-Kangaroo Country
+Kangaroo Country [has_water: 1]
 'Murica
 The Back Yard
 Germany

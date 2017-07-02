@@ -1,13 +1,14 @@
+import random
 
-def load_names():
-	with open("namepool.txt") as namepool_file:
-		names = namepool_file.read().split("\n")
+from world import World
 
-	while "" in names:  # In case of newline at end of file
-		names.remove("")
 
-	return names
-
-temp = load_names()
-for t in temp:
-	print(t)
+if __name__ == "__main__":
+    world = World()
+    country = random.choice(world.countries)
+    while True:
+        print("You are in {0}!".format(country))
+        print("Neighbouring countries:")
+        for c in country.neighbours:
+            print(" - {0}: {1} km away".format(c, country.neighbours[c]))
+        input()
