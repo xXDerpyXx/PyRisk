@@ -33,11 +33,11 @@ class World:
                         countries[line] = dict(DEFAULT_STATS)  # Create copy of DEFAULT_STATS
                         countries[line]["has_water"] = random.choice([0, 1])
                     else:
-                        name = found[1]
-                        stats = found[2]
+                        name = found.group(1)
+                        stats = found.group(2)
 
                         stats = {}
-                        for stat in found[2].split(","):
+                        for stat in found.group(2).split(","):
                             key, value = stat.split(":")
                             key = key.lstrip().rstrip()
                             value = int(value)
@@ -51,7 +51,7 @@ class World:
                                 if default_stat == "has_water":
                                     stats[default_stat] = random.choice([0, 1])
 
-                        countries[found[1]] = stats
+                        countries[found.group(1)] = stats
 
         countries_ret = []
         for country in countries:
